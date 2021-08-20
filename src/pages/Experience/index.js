@@ -6,7 +6,7 @@ import './style.css'
 const Experience = () => {
   return (
     <motion.div className="experience" exit="out" animate="in" initial="out" variants={pageTransition}>
-      <Picture props='Experience'  text="Old companies I've worked for!"/>
+      <Picture props='Experience'  text="Previous companies"/>
       <WorkExperience />
     </motion.div>
   )

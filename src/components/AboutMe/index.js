@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { motion } from "framer-motion";
 import './style.css';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() =>{
+    Aos.init({duration:1000});
+  }, [])
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -32,7 +37,7 @@ const About = () => {
      <div>
        <h3>Skills</h3>
         <p>These are my skills and this contains all the technologies and programming languages that I have learnt until now. I am constantly learning, therefore I may update this section more often.</p>
-        <motion.ul className="about__skillicons" variants={container} initial="hidden" animate="visible">
+        <motion.ul className="about__skillicons" variants={container} initial="hidden" animate="visible"  data-aos="fade-up">
           <motion.li className="about__skill item" variants={item}>
           <img className="about__icon"  src="images/HTML5.png" alt="HTML"/>
           <p>HTML</p>
