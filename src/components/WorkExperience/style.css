@@ -37,7 +37,7 @@
     margin: 1rem 0 0 0;
     justify-content:center;
     align-items:center;
-    padding:1rem;
+    padding:2rem;
   }
   .work__experience--Mascorp, .work__experience--Genpact {
     flex-direction:column;
@@ -50,7 +50,7 @@
     text-align: center;
   }
   .work__experience--logo{
-    margin-bottom: 1rem;
+    margin:0 0 0 1rem;
   }
   .work__experience--logoDiv{
   display:flex;
