@@ -5,7 +5,9 @@ const WorkExperience = () => {
   return (
     <div className="work__experience">
      <div className="work__experience--Mascorp">
+       <div className="work__experience--logoDiv">
        <img className="work__experience--logo" src="images/Mascorp.png" alt="Mascorp logo" />
+       </div>
       <div className="work__experience--details">
       <h5 className="work__experience--duration">Jun 2020 - Present</h5>
       <h2 className="work__experience--Title">Customer Service Analyst</h2>
@@ -16,7 +18,9 @@ const WorkExperience = () => {
       </div>
      </div>
      <div className="work__experience--Genpact">
+     <div>
      <img  className="work__experience--logo" src="images/Genpact.png" alt="Mascorp logo" />
+     </div>
      <div className="work__experience--details">
      <h5 className="work__experience--duration">Oct 2015 - Mar 2020</h5>
       <h2 className="work__experience--Title">Process Developer</h2>
