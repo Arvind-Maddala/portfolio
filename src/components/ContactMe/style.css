@@ -2,7 +2,7 @@
   box-shadow: 4px 8px 16px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
   margin: 0 0 0 1rem;
   border-radius:1.5rem;
-  padding: 3rem 7rem;
+  padding: 2rem ;
   background-color: #fff;
 }
 
@@ -62,11 +62,11 @@ padding:1rem 2rem;
 .contact__name--first, .contact__name--last, .contact__public--email, .contact__public--phone{
   display:flex;
   flex-direction: column;
-  width: 300px;
+  width: 400px;
   
 }
 
-.contact__name--last{
+.contact__name--last, .contact__public--phone{
   margin-left: 5rem;
 }
 @media (max-width:768px){
@@ -87,7 +87,7 @@ padding:1rem 2rem;
    flex-direction: column;
    padding:0;
   }
-  .contact__name--last{
+  .contact__name--last, .contact__public--phone{
     margin-left: 0;
   }
   .contact__name--first, .contact__name--last, .contact__public--email, .contact__public--phone{
