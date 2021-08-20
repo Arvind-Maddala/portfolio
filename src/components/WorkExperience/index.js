@@ -18,7 +18,7 @@ const WorkExperience = () => {
       </div>
      </div>
      <div className="work__experience--Genpact">
-     <div>
+     <div className="work__experience--logoDiv">
      <img  className="work__experience--logo" src="images/Genpact.png" alt="Mascorp logo" />
      </div>
      <div className="work__experience--details">

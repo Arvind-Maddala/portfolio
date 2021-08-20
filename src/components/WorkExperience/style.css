@@ -50,7 +50,8 @@
     text-align: center;
   }
   .work__experience--logo{
-    margin:0 0 0 1rem;
+    margin:0;
+    width:120px;
   }
   .work__experience--logoDiv{
   display:flex;
