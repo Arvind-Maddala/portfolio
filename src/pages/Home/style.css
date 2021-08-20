@@ -1,0 +1,14 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 8rem;
+  z-index: 99;
+}
+
+
+@media (max-width:768px){
+.home{
+  flex-direction: column;
+  margin: 1rem 2rem;
+}
+}

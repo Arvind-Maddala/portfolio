@@ -1,0 +1,14 @@
+.contact__me{
+  box-shadow: 4px 8px 16px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
+  margin: 0 0 0 1rem;
+  border-radius:1.5rem;
+  padding: 2rem;
+  background-color: #fafcfe;
+}
+
+@media (max-width:768px){
+  .contact__me{
+    margin: 1rem 0 0 0;
+  }
+
+  }

@@ -1,0 +1,24 @@
+.downloadcv{
+  background: black;
+  padding: 0.5rem 1.1rem;
+  border-radius:1.5rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  font-size:0.5rem;
+}
+
+.fa-download{
+  background: #57BE6C;
+  padding: 0.6rem;
+  border-radius:50%;
+  font-size: 0.8rem;
+}
+
+.downloadcv a{
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
