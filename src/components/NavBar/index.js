@@ -1,43 +1,65 @@
 import React, {useState} from 'react'
 import {NavLink} from 'react-router-dom';
 import {MenuList} from '../../helpers/MenuList'; 
+import { motion } from "framer-motion";
 import './style.css'
 
 const NavBar = () => {
   const [clicked, setClicked] = useState(false);
-  const menuList = MenuList.map(({url,title}, index) =>{
-    return (
-      <li key={index}>
-        <NavLink exact to={url} activeClassName="active">{title === 'Home' ? <i className="fas fa-home"></i> : title}</NavLink>
-      </li>
-    )
-  })
+  
   const handleClick = () => {
     setClicked(!clicked);
   }
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.4,
+        staggerChildren: 0.3
+      }
+    }
+  };
+  
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  };
   return (
-    <nav className="nav">
-       <div className="menu">
+    <motion.ul className="nav" variants={container} initial="hidden" animate="visible">
+       <motion.li className="menu">
          <img className="logo" alt="logo" src="images/Larry__logo2.png"/>
-      </div>
+      </motion.li>
 
-      <div className="menu-icon" onClick={handleClick}>
+      <motion.li className="menu-icon" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
-      </div>
+      </motion.li>
      
-      <ul className={clicked ? "menu-list" : "menu-list close"}>{menuList}
-      <li>
+      <motion.ul className={clicked ? "menu-list" : "menu-list close"} >{
+         MenuList.map(({url,title}, index) =>{
+          return (
+            <motion.li key={index} variants={item}>
+              <NavLink exact to={url} activeClassName="active">{title === 'Home' ? <i className="fas fa-home"></i> : title}</NavLink>
+            </motion.li>
+          )
+        })
+      }
+      <motion.li variants={item}>
         <div className="about__socialicons">
           <a href='https://www.facebook.com/prince.arvind/' target="_blank" rel="noreferrer"> <i className="fab fa-facebook-square"></i> </a>
           <a  href='https://www.instagram.com/_.geeky__nerd._/' target="_blank" rel="noreferrer">  <i className="fab fa-instagram"></i> </a>
           <a  href='https://www.linkedin.com/in/aravindmaddala/' target="_blank" rel="noreferrer"> <i className="fab fa-linkedin"></i> </a>
         </div>
-      </li>
-      <li className="nav__downloadCV"><button className="nav__downloadCVBtn">DOWNLOAD CV <i className="fas fa-download"></i></button>
+      </motion.li>
+      <motion.li variants={item} className="nav__downloadCV"><button className="nav__downloadCVBtn">DOWNLOAD CV <i className="fas fa-download"></i></button>
       
-      </li>
-      </ul>
-    </nav>
+      </motion.li>
+      </motion.ul>
+    </motion.ul>
   )
 }
 

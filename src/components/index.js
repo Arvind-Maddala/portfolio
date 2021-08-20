@@ -4,3 +4,4 @@ export {default as About} from './AboutMe';
 export {default as WorkExperience} from './WorkExperience';
 export {default as ContactMe} from './ContactMe';
 export {default as Certifications} from './Certifications';
+export {default as MyProjects} from './MyProjects';

@@ -6,7 +6,7 @@ import './style.css'
 const Contact = () => {
   return (
     <motion.div className="contact" exit="out" animate="in" initial="out" variants={pageTransition}>
-      <Picture props='Contact' />
+      <Picture props='Contact'  text="Let's Keep in Touch!"/>
       <ContactMe />
     </motion.div>
   )

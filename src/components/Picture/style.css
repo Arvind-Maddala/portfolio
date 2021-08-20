@@ -15,9 +15,14 @@
   width: 100%;
 }
 
+.picture__title{
+  margin: 1rem 0;
+}
 @media (max-width:768px){
   .picture{
     margin: 0;
     padding: 1rem;
+  
   }
+  
   }

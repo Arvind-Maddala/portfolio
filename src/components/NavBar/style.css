@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-nav {
+.nav {
   background: #101010;
   padding: 1rem 2rem;
   display: flex;
@@ -108,37 +108,21 @@ color:#0077b5
 }
 
 
-/* 
-@media screen and (max-width: 800px) {
- 
-  .logo {
-    font-size: 2rem;
-    
-  }
-  .logo h2{
-    font-size: 2rem;
-    
-  }
-  .menu-list li a {
-    font-size: 1.5rem;
-  }
-  .social-links {
-    display:none;
-  }
-} */
-
 .fa-download{
-  color: #57BE6C;
-  font-size: 1.25rem;
+  background-color: #57BE6C;
+  font-size: 1rem;
   margin-left: 0.25rem;
+  padding: 0.5rem;
+  border-radius:50%;
+  color: #fff;
 }
 .nav__downloadCVBtn{
   background: #fff;
   border: none;
-  padding:0.75REM 1.25REM;
+  padding:0.5REM 1REM;
   border-radius:1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 @media screen and (max-width: 768px) {
 

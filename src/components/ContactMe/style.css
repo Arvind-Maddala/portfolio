@@ -69,6 +69,10 @@ padding:1rem 2rem;
 .contact__name--last, .contact__public--phone{
   margin-left: 5rem;
 }
+
+.contact__for--submit{
+  cursor: pointer;
+}
 @media (max-width:768px){
 
   input::placeholder

@@ -3,7 +3,7 @@
   margin: 0 0 0 1rem;
   border-radius:1.5rem;
   padding: 2rem;
-  background-color: #fafcfe;
+  background-color: #fff;
 }
 .about h3{
   font-size: 1.75rem;
@@ -27,6 +27,8 @@
 .about__skillicons{
   display: flex;
   flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
 }
 .about__skillicons p {
   font-size: 0.75rem;
@@ -38,6 +40,11 @@
 @media (max-width:768px){
   .about{
     margin: 1rem 0 0 0;
+    text-align: center;
+  }
+  .about__skill {
+    padding: 1rem 0.75rem;
+    margin: 0;
   }
 
   }
