@@ -2,13 +2,104 @@
   box-shadow: 4px 8px 16px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
   margin: 0 0 0 1rem;
   border-radius:1.5rem;
-  padding: 2rem;
-  background-color: #fafcfe;
+  padding: 3rem 7rem;
+  background-color: #fff;
 }
 
+.contact__me input, textarea{
+  border: none;
+  border-bottom: 1px solid #101010;
+  margin: 1rem 0;
+}
+
+input::placeholder
+    {   
+        text-align: start !important;
+        font-size: 0.75rem;  
+
+    }
+
+input:focus, textarea:focus{
+  outline: none;
+}
+.contact__me h2{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact__personal, .contact__public{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 2rem;
+}
+
+.contact__message{
+display:flex;
+flex-direction: column;
+width: 100%;
+padding:1rem 2rem;
+}
+
+.contact__submit {
+  margin: 0 2rem;
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+ 
+}
+.contact__submit button{
+  padding: 0.75rem 2rem;
+  color:#fff;
+  background-color:black;
+  border: none;
+  border-radius:3px;
+}
+
+.fa-chevron-right{
+  margin-left: 0.5rem;
+}
+.contact__name--first, .contact__name--last, .contact__public--email, .contact__public--phone{
+  display:flex;
+  flex-direction: column;
+  width: 300px;
+  
+}
+
+.contact__name--last{
+  margin-left: 5rem;
+}
 @media (max-width:768px){
   .contact__me{
     margin: 1rem 0 0 0;
+    padding:2rem
   }
 
+  .contact__personal, .contact__public{
+    display:flex;
+   flex-direction: column;
+   padding:0;
   }
+  .contact__name--last{
+    margin-left: 0;
+  }
+  .contact__name--first, .contact__name--last, .contact__public--email, .contact__public--phone{
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+  .contact__message{
+    padding:0;
+  }
+
+  .contact__submit {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+  }
+  input
+    {   
+        padding:0.25rem 0;
+        
+    }
+}

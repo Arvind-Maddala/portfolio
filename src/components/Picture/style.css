@@ -8,12 +8,9 @@
   border-radius:1.5rem;
  margin: 0 1rem 0 0;
  text-align: center;
- background-color: #fafcfe;
+ background-color: #ffffff;
 }
 
-.picture__img{
-  width: 100%;
-}
 
 @media (max-width:768px){
   .picture{

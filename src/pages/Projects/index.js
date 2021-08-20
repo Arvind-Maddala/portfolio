@@ -7,7 +7,7 @@ import './style.css'
 const Projects = () => {
   return (
     <motion.div className="projects" exit="out" animate="in" initial="out" variants={pageTransition}>
-      <Picture props='Projects'/>
+      <div className="project__picture"><Picture props='Projects'/></div>
       <About />
     </motion.div>
   )

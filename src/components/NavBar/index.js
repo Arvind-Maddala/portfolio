@@ -33,8 +33,8 @@ const NavBar = () => {
           <a  href='https://www.linkedin.com/in/aravindmaddala/' target="_blank" rel="noreferrer"> <i className="fab fa-linkedin"></i> </a>
         </div>
       </li>
-      <li className="nav__hireme"><button className="nav__hirebtn">Hire Me</button>
-      <i className="fas fa-paper-plane"></i>
+      <li className="nav__downloadCV"><button className="nav__downloadCVBtn">DOWNLOAD CV <i className="fas fa-download"></i></button>
+      
       </li>
       </ul>
     </nav>
