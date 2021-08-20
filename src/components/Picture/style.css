@@ -11,9 +11,13 @@
  background-color: #ffffff;
 }
 
+.picture__img{
+  width: 100%;
+}
 
 @media (max-width:768px){
   .picture{
     margin: 0;
+    padding: 1rem;
   }
   }
