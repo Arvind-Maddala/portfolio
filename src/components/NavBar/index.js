@@ -55,7 +55,7 @@ const NavBar = () => {
           <a  href='https://www.linkedin.com/in/aravindmaddala/' target="_blank" rel="noreferrer"> <i className="fab fa-linkedin"></i> </a>
         </div>
       </motion.li>
-      <motion.li variants={item} className="nav__downloadCV"><button className="nav__downloadCVBtn">DOWNLOAD CV <i className="fas fa-download"></i></button>
+      <motion.li variants={item} className="nav__downloadCV"><a href='https://drive.google.com/file/d/16rayNr_py62qsYzpXit_vkg260vThwUd/view' target='_blank' rel="noreferrer"><button className="nav__downloadCVBtn">DOWNLOAD CV <i className="fas fa-download"></i></button></a>
       
       </motion.li>
       </motion.ul>
