@@ -30,6 +30,7 @@
 }
 .myproject__project--info{
   width: 400px;
+  line-height: 1.5;
 }
 .myproject__project--info p,.myproject__project--info  {
   margin:1rem 0;
