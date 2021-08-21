@@ -1,14 +1,9 @@
 import React, {useEffect} from 'react';
 import { motion } from "framer-motion";
 import './style.css';
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const About = () => {
-  useEffect(() =>{
-    Aos.init({duration:1000});
-  }, [])
-
+ 
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -16,7 +11,7 @@ const About = () => {
       scale: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.2
+        staggerChildren: 0.3
       }
     }
   };
@@ -29,15 +24,15 @@ const About = () => {
     }
   };
   return (
-    <div className="about" variants={container} initial="hidden" animate="visible">
-      <div >
+    <motion.ul className="about" variants={container} initial="hidden" animate="visible">
+      <motion.li variants={item}>
       <h3 >About </h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-     <div>
+      </motion.li>
+     <motion.li variants={item}>
        <h3>Skills</h3>
         <p>These are my skills and this contains all the technologies and programming languages that I have learnt until now. I am constantly learning, therefore I may update this section more often.</p>
-        <motion.ul className="about__skillicons" variants={container} initial="hidden" animate="visible"  data-aos="fade-up">
+        <motion.ul className="about__skillicons" variants={container} initial="hidden" animate="visible" >
           <motion.li className="about__skill item" variants={item}>
           <img className="about__icon"  src="images/HTML5.png" alt="HTML"/>
           <p>HTML</p>
@@ -88,8 +83,8 @@ const About = () => {
           </motion.li>
 
         </motion.ul>
-     </div>
-    </div>
+     </motion.li>
+    </motion.ul>
  
   )
 }
