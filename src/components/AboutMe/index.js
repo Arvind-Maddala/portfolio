@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { motion } from "framer-motion";
 import './style.css';
 
@@ -25,11 +25,11 @@ const About = () => {
   };
   return (
     <motion.ul className="about" variants={container} initial="hidden" animate="visible">
-      <motion.li variants={item}>
+      <motion.li variants={item} className="about__aboutme">
       <h3 >About </h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>I'm <span className="about__aravind">Aravind Maddala</span>, an Innovative and enthusiastic junior developer. After dicovering my passion for software developement and everything in its orbit, i'm fasciated by building web apps and websites for my friends and family. I would describe myself as a competent front end developer who has passion for design. </p>
       </motion.li>
-     <motion.li variants={item}>
+     <motion.li variants={item} className="about__skills">
        <h3>Skills</h3>
         <p>These are my skills and this contains all the technologies and programming languages that I have learnt until now. I am constantly learning, therefore I may update this section more often.</p>
         <motion.ul className="about__skillicons" variants={container} initial="hidden" animate="visible" >

@@ -6,6 +6,15 @@
   background-color: #fff;
   list-style: none;
 }
+.about__aboutme, .about__skills{
+  line-height: 1.5;
+}
+.about__aboutme{
+  margin-bottom: 1rem;
+}
+.about__aravind{
+  font-weight: 600;
+}
 .about h3{
   font-size: 1.75rem;
   font-weight: 800;
