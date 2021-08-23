@@ -8,7 +8,7 @@
   background: #101010;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   color: #fff;
   position: relative;
   z-index: 99;
@@ -55,10 +55,9 @@
 .menu-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.25rem;
-  width: 100%;
 }
 
 .about__socialicons{
@@ -131,9 +130,7 @@ color:#FD794F;
 @media screen and (max-width: 768px) {
 
   .menu{
-    display: flex !important;
-    justify-content: center;
-    align-items: flex-end;
+    display: block !important;
   }
   .menu h5{
     width: 60px;
@@ -154,7 +151,7 @@ color:#FD794F;
    margin:0 1rem;
   }
   .menu-icon {
-    display: block;
+    display: block !important;
   }
   .social-links{
     display:none;
@@ -190,7 +187,7 @@ color:#FD794F;
   }
 
   .menu-list.close {
-    right: -100%;
+    top: -100%;
     transition: all 0.5s ease-in-out;
     display: none;
   }

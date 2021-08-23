@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {Achievements, Home, Contact, Experience, Projects} from './pages';
-import {NavBar} from './components';
 import { AnimatePresence } from 'framer-motion';
 import './App.css'
 
@@ -10,7 +9,7 @@ const App = () => {
   return (
     <div className="app">
       <Router>
-       <NavBar />
+
        <AnimatePresence exitBeforeEnter>
         <Switch >
           <Route exact path="/"><Home/></Route>

@@ -7,9 +7,6 @@ import './style.css'
 const NavBar = () => {
   const [clicked, setClicked] = useState(false);
   
-  const handleClick = () => {
-    setClicked(!clicked);
-  }
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -17,7 +14,7 @@ const NavBar = () => {
       scale: 1,
       transition: {
         delayChildren: 0.4,
-        staggerChildren: 0.3
+        staggerChildren: 0.2
       }
     }
   };
@@ -29,25 +26,26 @@ const NavBar = () => {
       opacity: 1
     }
   };
+  const handleClick = () => {
+    setClicked(!clicked);
+  }
   return (
     <motion.ul className="nav" variants={container} initial="hidden" animate="visible">
-       <motion.li className="menu">
+       <motion.li className="menu" variants={item}>
          <img className="logo" alt="logo" src="images/Larry__logo2.png"/>
       </motion.li>
 
-      <motion.li className="menu-icon" onClick={handleClick}>
+      <motion.div className="menu-icon" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
-      </motion.li>
+      </motion.div>
      
-      <motion.ul className={clicked ? "menu-list" : "menu-list close"} >{
-         MenuList.map(({url,title}, index) =>{
-          return (
-            <motion.li key={index} variants={item}>
-              <NavLink exact to={url} activeClassName="active">{title === 'Home' ? <i className="fas fa-home"></i> : title}</NavLink>
-            </motion.li>
-          )
-        })
-      }
+      <motion.ul className={clicked ? "menu-list" : "menu-list close"} > { MenuList.map(({url,title}, index) =>{
+    return (
+      <motion.li key={index}  variants={item}>
+        <NavLink exact to={url} activeClassName="active">{title}</NavLink>
+      </motion.li>
+    )
+  })} 
       <motion.li variants={item}>
         <div className="about__socialicons">
           <a href='https://www.facebook.com/prince.arvind/' target="_blank" rel="noreferrer"> <i className="fab fa-facebook-square"></i> </a>
@@ -57,7 +55,6 @@ const NavBar = () => {
         </div>
       </motion.li>
       <motion.li variants={item} className="nav__downloadCV"><a href='https://drive.google.com/file/d/16rayNr_py62qsYzpXit_vkg260vThwUd/view' target='_blank' rel="noreferrer"><button className="nav__downloadCVBtn">DOWNLOAD CV <i className="fas fa-download"></i></button></a>
-      
       </motion.li>
       </motion.ul>
     </motion.ul>

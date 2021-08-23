@@ -1,12 +1,15 @@
 import React from 'react';
-import { MyProjects} from '../../components';
+import { MyProjects,NavBar} from '../../components';
 import './style.css'
 
 const Projects = () => {
   return (
+    <>
+        <NavBar/>
     <div className="projects" >
       <MyProjects />
     </div>
+    </>
   )
 }
 
