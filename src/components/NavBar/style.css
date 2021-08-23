@@ -84,7 +84,9 @@ color:#bc2a8d
 .fa-linkedin:hover{
 color:#0077b5
 }
-
+.fa-github:hover{
+color:#FD794F;
+}
 .menu-list li a {
   text-decoration: none;
   color: #fff;

@@ -53,6 +53,7 @@ const NavBar = () => {
           <a href='https://www.facebook.com/prince.arvind/' target="_blank" rel="noreferrer"> <i className="fab fa-facebook-square"></i> </a>
           <a  href='https://www.instagram.com/_.geeky__nerd._/' target="_blank" rel="noreferrer">  <i className="fab fa-instagram"></i> </a>
           <a  href='https://www.linkedin.com/in/aravindmaddala/' target="_blank" rel="noreferrer"> <i className="fab fa-linkedin"></i> </a>
+          <a href="https://github.com/Arvind-Maddala" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
         </div>
       </motion.li>
       <motion.li variants={item} className="nav__downloadCV"><a href='https://drive.google.com/file/d/16rayNr_py62qsYzpXit_vkg260vThwUd/view' target='_blank' rel="noreferrer"><button className="nav__downloadCVBtn">DOWNLOAD CV <i className="fas fa-download"></i></button></a>

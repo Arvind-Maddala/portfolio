@@ -8,7 +8,7 @@ import './style.css';
 const Achievements = () => {
   return (
     <motion.div className="achievements" exit="out" animate="in" initial="out" variants={pageTransition}>
-      <Picture props='Achievements' text="Certifications I earned!"/>
+      <Picture props='Achievements' text="My Certifications"/>
       <Certifications />
     </motion.div>
   )
