@@ -27,7 +27,7 @@ const About = () => {
     <motion.ul className="about" variants={container} initial="hidden" animate="visible">
       <motion.li variants={item} className="about__aboutme">
       <h3 >About </h3>
-      <p>I'm <span className="about__aravind">Aravind Maddala</span>, an Innovative and enthusiastic junior developer. After discovering my passion for software developement and everything in its orbit, I'm fascinated by building web apps and websites for friends and family. I would describe myself as a competent front end developer who has passion for design. </p>
+      <p>I'm <span className="about__aravind">Aravind</span>, an Innovative and enthusiastic junior developer. After discovering my passion for software developement and everything in its orbit, I'm fascinated by building web apps and websites for friends and family. I would describe myself as a competent front end developer who has passion for design. </p>
       </motion.li>
      <motion.li variants={item} className="about__skills">
        <h3>Skills</h3>
