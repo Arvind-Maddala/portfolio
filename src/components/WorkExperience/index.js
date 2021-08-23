@@ -34,7 +34,7 @@ const WorkExperience = () => {
       <h2 className="work__experience--Title">Customer Service Analyst</h2>
       <h3 className="work__experience--Company">Mascorp IT Solutions Pvt Ltd</h3>
       <ul>
-        <li>Worked as SAP Basis Trainee providing technical support on SAPBasis systems, including establishing standards and requirements,evaluating and directing enhancements, and implementingsolutions for performance monitoring and system configuration,design, and implementation.</li>
+        <li>Worked as SAP Basis Trainee providing technical support on SAP Basis systems, including establishing standards and requirements, evaluating and directing enhancements, and implementing solutions for performance monitoring and system configuration, design, and implementation.</li>
       </ul>
       </div>
      </motion.li>
@@ -47,8 +47,8 @@ const WorkExperience = () => {
       <h2 className="work__experience--Title">Process Developer</h2>
       <h3 className="work__experience--Company">Genpact pvt ltd</h3>
       <ul>
-        <li>Worked as a Quality analyst and providing the subject matterexpertise to acquisition consulting projects, ensuring excellence inthe technical process.</li>
-        <li>Handled complex business projects like VIP, BBB, Deceased, Forum,Internal, High Profile, Deceased, Local Office & Twitter Escalations.</li>
+        <li>Worked as a Quality analyst and providing the subject matter expertise to acquisition consulting projects, ensuring excellence in the technical process.</li>
+        <li>Handled complex business projects like VIP,  High Profile, and social platform Escalations.</li>
       </ul>
      </div>
      </motion.li>
