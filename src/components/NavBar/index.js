@@ -42,7 +42,7 @@ const NavBar = () => {
       <motion.ul className={clicked ? "menu-list" : "menu-list close"} > { MenuList.map(({url,title}, index) =>{
     return (
       <motion.li key={index}  variants={item}>
-        <NavLink exact to={url} activeClassName="active">{title}</NavLink>
+        <NavLink exact to={url} activeClassName="active">{title === "Home" ? <i className="fas fa-home"></i> : title}</NavLink>
       </motion.li>
     )
   })} 
