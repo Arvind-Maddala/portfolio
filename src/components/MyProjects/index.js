@@ -108,7 +108,7 @@ const MyProjects = () => {
           <p> Todo is a basic React App, build using React Hooks and context API for state management. CRUD operations can be performed on this app and the data is stored to local storage.</p>
         </div>
         <div className="myproject__project--preview">
-          <a href="https://arvind-maddala.github.io/todowithcontextapi/" target="_blank" rel="noreferrer"><motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Live Preview <i className="fas fa-external-link-square-alt"></i></motion.button></a>
+          <a href="https://aravind-todolist.netlify.app/" target="_blank" rel="noreferrer"><motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Live Preview <i className="fas fa-external-link-square-alt"></i></motion.button></a>
         </div>
      </div>
     </div>

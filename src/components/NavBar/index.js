@@ -49,7 +49,7 @@ const NavBar = () => {
       <motion.li variants={item}>
         <div className="about__socialicons">
           <a href='https://www.facebook.com/prince.arvind/' target="_blank" rel="noreferrer"> <i className="fab fa-facebook-square"></i> </a>
-          <a  href='https://www.instagram.com/_.geeky__nerd._/' target="_blank" rel="noreferrer">  <i className="fab fa-instagram"></i> </a>
+          <a  href='https://www.instagram.com/theordinary__guy/' target="_blank" rel="noreferrer">  <i className="fab fa-instagram"></i> </a>
           <a  href='https://www.linkedin.com/in/aravindmaddala/' target="_blank" rel="noreferrer"> <i className="fab fa-linkedin"></i> </a>
           <a href="https://github.com/Arvind-Maddala" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
         </div>

@@ -27,14 +27,14 @@ const WorkExperience = () => {
     <motion.ul className="work__experience" variants={container} initial="hidden" animate="visible">
      <motion.li className="work__experience--Mascorp" variants={item}>
        <div className="work__experience--logoDiv">
-       <img className="work__experience--logo" src="images/Mascorp.png" alt="Mascorp logo" />
+       <img className="work__experience--logo" src="images/datachai11.png" alt="Data Chain logo" />
        </div>
       <div className="work__experience--details" >
-      <h5 className="work__experience--duration">Jun 2020 - Present</h5>
-      <h2 className="work__experience--Title">Customer Service Analyst</h2>
-      <h3 className="work__experience--Company">Mascorp IT Solutions Pvt Ltd</h3>
+      <h5 className="work__experience--duration">Oct 2021 - Present</h5>
+      <h2 className="work__experience--Title">Software Engineer</h2>
+      <h3 className="work__experience--Company">Data Chain Pvt Ltd</h3>
       <ul>
-        <li>Worked as SAP Basis Trainee providing technical support on SAP Basis systems, including establishing standards and requirements, evaluating and directing enhancements, and implementing solutions for performance monitoring and system configuration, design, and implementation.</li>
+        <li>Worked as a Frontend Developer building Applications and Dashboards for robotic process automation using React and NextJs</li>
       </ul>
       </div>
      </motion.li>
