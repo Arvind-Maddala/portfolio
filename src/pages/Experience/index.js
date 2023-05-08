@@ -16,6 +16,7 @@ const Experience = () => {
       >
         <Picture props="Experience" text="I worked at" />
         <WorkExperience />
+
       </motion.div>
     </>
   );
