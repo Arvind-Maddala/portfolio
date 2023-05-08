@@ -1,64 +1,82 @@
 .work__experience {
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   margin: 0 0 0 1rem;
-  border-radius:1.5rem;
+  border-radius: 1.5rem;
   padding: 1rem 3rem;
-  background-color:#fff;
+  background-color: #fff;
+  display: grid;
+  overflow: hidden;
+  margin: 0;
+  list-style: none;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  padding: 2rem 10rem;
 }
 
-.work__experience--logo{
-  width: 180px;
-  height: 60px;
-  margin-top: 5rem;
+.work__experience--logo {
+  /* width: 180px; */
+  max-height: 65px;
+}
+.work__experience--item {
+  min-width: 300px;
 }
 
-.work__experience--Mascorp, .work__experience--Genpact {
-  display: flex;
-  margin-bottom: 2rem;
-  width: 100%;
+.work__experience ul li {
+  line-height: 1.5;
+}
+.work__experience--jobSummary {
+  width: 25%;
+}
+.work__experience--duration,
+.work__experience--Title,
+.work__experience--Company {
+  margin: 0.5rem;
 }
 
-.work__experience--details {
-  padding: 1rem 3rem;
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.work__experience ul li{
-  line-height:1.5;
-}
-
-.work__experience--duration, .work__experience--Title, .work__experience--Company{
-  margin-bottom:0.5rem;
-}
-@media (max-width:768px){
-  .work__experience{
-    margin: 1rem 0 0 0;
-    justify-content:center;
-    align-items:center;
-    padding:2rem;
+@media (max-width: 768px) {
+  .work__experience {
+    margin-top: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+    padding: 2rem 1rem;
   }
-  .work__experience--Mascorp, .work__experience--Genpact {
-    flex-direction:column;
-    margin-bottom: 1rem;
-  }
+
   .work__experience--details {
-    padding: 0;
+    padding: 0 1rem 1rem;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .work__experience--logo{
-    margin:0;
-    width:120px;
+  .work__experience--logo {
+    margin: 0;
+    width: 150px;
+    height: auto;
   }
-  .work__experience--logoDiv{
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  .work__experience--logoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  ul{
+  ul {
     list-style: none;
   }
+  .work__experience--item {
+    margin: 1rem 0;
   }
+}
+
+@media (max-width: 360px) {
+  .work__experience--details {
+    padding: 0;
+  }
+  .work__experience {
+    margin-top: 2rem;
+    padding: 0;
+  }
+  .work__experience--logo {
+    width: 120px;
+    height: 100%;
+  }
+}
