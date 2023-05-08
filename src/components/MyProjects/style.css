@@ -27,14 +27,14 @@
 .myproject__logo {
   max-width: 400px;
   height: 100%;
-  -webkit-background-size: contain no-repeat;
-  -moz-background-size: contain no-repeat;
-  -o-background-size: contain no-repeat;
-  background-size: contain no-repeat;
+  position: relative;
+  z-index: 0;
 }
 .myproject__project--info {
   width: 400px;
   line-height: 1.5;
+  position: relative;
+  z-index: 1;
 }
 .myproject__project--info p,
 .myproject__project--info {
@@ -61,5 +61,6 @@
   }
   .myproject__project--info {
     width: 200px;
+    line-height: 1.2;
   }
 }
